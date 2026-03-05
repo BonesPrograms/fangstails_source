@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+<object Name="BeastFangs" Inherits="NaturalWeapon">
+    <part Name="Armor" WornOn="Face" />
+		<part Name="Render" DisplayName="fangs" RenderString="*" Tile="fangsandtails/beastfangs.png" TileColor="&amp;w" DetailColor="Y" />
+		<part Name="Description" Short="A sharp set of carnivorous fangs, sculpted by evolution to rend flesh." />
+		<part Name="Commerce" Value="0" />
+		<part Name="NaturalEquipment" />
+		<part Name="NoDamage" />
+		<part Name="NoBreak" />
+		<part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+		<removepart Name="TinkerItem" />
+		<intproperty Name="Natural" Value="1" />
+    <part Name="MeleeWeapon" Skill="ShortBlades" Slot="Face" MaxStrengthBonus="1"/>
+    <part Name="MaxPenetration" Max="1"/>
+    <tag Name="WeaponIgnoreStrength" />
+		<tag Name="MutationEquipment" Value="BeastFangs" />
+		<tag Name="ExcludeFromDynamicEncounters" />
+		<tag Name="NoSparkingQuest" />
+    <tag Name="Gender" Value="plural" />
+		<tag Name="NaturalGear" />
+		<tag Name="VisibleAsDefaultBehavior" />
+		<tag Name="ShowAsPhysicalFeature" />
+</object>
+
+<object Name="BeastTail" Inherits="NaturalWeapon">
+<part Name="Armor" WornOn="Tail"/>
+   <part Name="Render" DisplayName="tail" RenderString="*" Tile="fangsandtails/tail_beast.png" TileColor="&amp;w" DetailColor="w" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A spindly, bouncy tail, providing balance to the creature it's attached to." />
+    <part Name="NaturalEquipment" />
+    <part Name="NoBreak" />
+    <part Name="NoDamage" />
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+   <part Name="MeleeWeapon" Skill="Cudgel" Slot="Tail" MaxStrengthBonus="1"/>
+   <tag Name="WeaponIgnoreStrength" />
+    <removepart Name="TinkerItem" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="MutationEquipment" Value="BeastTail" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="NaturalGear" />
+    <tag Name="VisibleAsDefaultBehavior" />
+    <tag Name="ShowAsPhysicalFeature" />
+	 <tag Name="Gender" Value="plural" />
+    </object>
+  <object Name="Striped Tail" Inherits="BeastTail">
+  <part Name="Render" DisplayName="{{O-K-O-K-O-K-O sequence|striped}} tail" RenderString="*" Tile="fangsandtails/tail_beast_striped.png" TileColor="&amp;k" DetailColor="O"/>
+  <part Name="Description" Short="Evolution painted confusing stripes in an attempt to hide itself from the apprehensive prey." />
+  </object>
+ <object Name="Waggy Tail" Inherits="BeastTail">
+	<part Name="Render" DisplayName="{{K sequence|waggy}} tail" RenderString="*" Tile="fangsandtails/tail_fluffy_new.png" TileColor="&amp;w" DetailColor="k" />
+    <part Name="Description" Short="A bushy, warm tail, earned by the genome through millions of harsh winters." />
+  </object>
+  <object Name="Poofy Tail" Inherits="BeastTail">
+  <part Name="Render" DisplayName="{{Y-Y-O-O-O sequence|poofy}} tail" RenderString="*" Tile="fangsandtails/tail_fluffy_tipped.png" TileColor="&amp;O" DetailColor="Y" />
+  <part Name="Description" Short="Earthen camoflauge combines with warmth; perfect for the autumn flower fields." />
+  </object>
+  <object Name="Ringed Tail" Inherits="BeastTail">
+	<part Name="Render" DisplayName="{{K-y-K-y-K-y sequence|ringed}} tail" RenderString="*" Tile="fangsandtails/tail_fluffy_striped.png" TileColor="&amp;K" DetailColor="y" />
+    <part Name="Description" Short="Bushy, short, and camoflauged. A fancy of sneaky critters." />
+  </object>
+  <object Name="Single-Striped Tail" Inherits="BeastTail">
+  <part Name="Render" DisplayName="{{Y sequence|single}}-{{K sequence|striped}} tail" Tile="fangsandtails/tail_skunk.png" TileColor="&amp;K" DetailColor="Y"/>
+  <part Name="Description" Short="A bright streak of white cascades over a dark canvas to confuse the eyes of a hungry predator." />
+  </object>
+  <object Name="Scaled Tail" Inherits="BeastTail">
+  <part Name="Render" DisplayName="{{scaled|scaled}} tail" RenderString="*" Tile="fangsandtails/tail_lizard_slim.png" TileColor="&amp;W" DetailColor="g" />
+  <part Name="Description" Short="A tough, leathery surface marred with rigid scales. "/>
+  </object>
+</objects>
