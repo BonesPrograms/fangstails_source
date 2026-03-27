@@ -3,6 +3,7 @@
 <category Name="Physical">
 <mutation Name="Tail" Cost="0" MaxSelected="1" Class ="BeastTail" Exclusions="" BearerDescription="those with tails" Tile="fangsandtails/tail_beast.png"/>
 <mutation Name="Fangs" Cost="0" Exclusions="Beak" MaxSelected="1" Class="BeastFangs" BearerDescription="those with fangs" Tile="fangsandtails/beastfangs.png"/>
+<mutation Name="BeastClaws" DisplayName="Claws" Cost="0" Exclusions="BurrowingClaws" MaxSelected="1" Class="BeastClaws" BearerDescription="those with claws" Tile="fangsandtails/claw.png"/>
 </category>
 </mutations>
 

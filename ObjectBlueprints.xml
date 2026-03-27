@@ -24,6 +24,26 @@
 		<tag Name="ShowAsPhysicalFeature" />
 </object>
 
+  <object Name="BeastClaws" Inherits="MeleeWeapon">
+    <part Name="NoBreak" />
+    <part Name="NoDamage" />
+    <part Name="Armor" AV="0" DV="0" WornOn="Hands" />
+    <part Name="Render" DisplayName="claw" RenderString="*" Tile="fangsandtails/claw.png" TileColor="&amp;w" DetailColor="W" />
+    <part Name="Commerce" Value="0" />
+    <part Name="Description" Short="A set of long, sharp claws." />
+    <part Name="NaturalEquipment" />
+    <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+    <removepart Name="TinkerItem" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <intproperty Name="Natural" Value="1" />
+    <tag Name="Gender" Value="plural" />
+    <tag Name="AllowArmorDefaultBehavior" />
+    <tag Name="NaturalGear" />
+    <tag Name="VisibleAsDefaultBehavior" />
+    <tag Name="ShowAsPhysicalFeature" />
+  </object>
+
 <object Name="BeastTail" Inherits="NaturalWeapon">
 <part Name="Armor" WornOn="Tail"/>
    <part Name="Render" DisplayName="tail" RenderString="*" Tile="fangsandtails/tail_beast.png" TileColor="&amp;w" DetailColor="w" />
